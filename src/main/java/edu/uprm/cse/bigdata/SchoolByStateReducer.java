@@ -33,6 +33,7 @@ public class SchoolByStateReducer extends Reducer<Text, IntWritable, Text, IntWr
         Logger logger = LogManager.getRootLogger();
         //logger.trace("Red: " + key.toString());
 
+        // DEBUG
         context.write(key, new IntWritable(count));
     }
 }
